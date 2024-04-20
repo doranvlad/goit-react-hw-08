@@ -26,6 +26,7 @@ function Contact({ contact }) {
         </p>
       </div>
       <button
+        className={s.button}
         onClick={() => {
           handledeleteContact(contact.id);
         }}

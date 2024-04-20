@@ -6,7 +6,6 @@ import { selectIsLoggedIn } from "../../../redux/auth/slice";
 function RestrictedRoute({ children }) {
   const isLoggedIn = useSelector(selectIsLoggedIn);
   const location = useLocation();
-  console.log(location);
   if (!isLoggedIn) {
     return children;
   }

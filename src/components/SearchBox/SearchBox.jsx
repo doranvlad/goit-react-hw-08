@@ -12,10 +12,11 @@ function SearchBox() {
   };
 
   return (
-    <div>
+    <div className={s.wrap}>
       <label htmlFor="searchInput" className={s.label}>
         <span>find contacts by name</span>
         <input
+          className={s.input}
           type="text"
           value={search}
           id="searchInput"

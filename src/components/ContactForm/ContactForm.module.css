@@ -5,16 +5,39 @@
 
 .form {
   border: 1px solid black;
+  margin: 0 auto;
+  width: 400px;
   border-radius: 4px;
   padding: 15px;
-  width: 300px;
   display: flex;
   flex-direction: column;
   gap: 10px;
   margin-bottom: 20px;
   button {
+    border: 1px solid rgb(55, 54, 54);
     width: 150px;
     margin: 0 auto;
+    background-color: rgb(135, 206, 250, 0.6);
+    border-radius: 4px;
+    padding: 10px 20px;
+    transition: background-color 0.2s ease; /* Плавное изменение цвета фона */
+  }
+
+  button:hover {
+    background-color: rgb(
+      135,
+      206,
+      250,
+      0.9
+    ); /* Увеличение прозрачности при наведении */
+  }
+
+  .input {
+    background-color: rgb(135, 206, 250, 0.3);
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 25px;
+    outline: none;
   }
 }
 

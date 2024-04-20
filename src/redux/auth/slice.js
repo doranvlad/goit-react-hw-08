@@ -38,7 +38,6 @@ const slice = createSlice({
         state.isRefreshing = false;
       })
       .addCase(refreshUserThunk.fulfilled, (state, { payload }) => {
-        console.log(payload);
         state.user.name = payload.name;
         state.user.email = payload.email;
         state.isLoggedIn = true;

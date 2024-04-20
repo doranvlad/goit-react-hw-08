@@ -33,12 +33,17 @@ function ContactForm() {
       <Form className={s.form}>
         <div className={s.field}>
           <label htmlFor={nameFieldId}>Name</label>
-          <Field type="text" name="name" id={nameFieldId} />
+          <Field className={s.input} type="text" name="name" id={nameFieldId} />
           <ErrorMessage name="name" component="div" className={s.error} />
         </div>
         <div className={s.field}>
           <label htmlFor={phoneFieldId}>Number</label>
-          <Field type="text" name="number" id={phoneFieldId} />
+          <Field
+            className={s.input}
+            type="text"
+            name="number"
+            id={phoneFieldId}
+          />
           <ErrorMessage name="number" component="div" className={s.error} />
         </div>
         <button type="submit">Add contact</button>

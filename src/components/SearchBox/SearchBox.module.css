@@ -1,5 +1,21 @@
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .label {
   display: flex;
+  align-items: center;
   flex-direction: column;
-  width: 300px;
+  width: 400px;
+
+  .input {
+    width: 100%;
+    background-color: rgb(135, 206, 250, 0.3);
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 25px;
+    outline: none;
+  }
 }

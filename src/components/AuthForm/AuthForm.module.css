@@ -1,0 +1,59 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* align-items: center; */
+  width: 350px;
+  margin: 0 auto;
+  gap: 5px;
+  margin-top: 150px;
+
+  .input {
+    width: 100%;
+    background-color: rgb(135, 206, 250, 0.3);
+    border: 1px solid black;
+    border-radius: 4px;
+    height: 25px;
+    outline: none;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  .input:-webkit-autofill,
+  .input:-webkit-autofill:focus {
+    transition: background-color 0s 600000s, color 0s 600000s !important;
+  }
+}
+
+pdd {
+  margin: 0;
+  padding: 0;
+  color: red;
+}
+
+.bottom_link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.btn {
+  width: auto;
+  margin: 0 auto;
+  margin-top: 15px;
+  padding: 10px 30px;
+
+  background-color: rgb(135, 206, 250, 0.6);
+  border: 1px solid black;
+  border-radius: 4px;
+  transition: background-color 0.2s ease; /* Плавное изменение цвета фона */
+}
+
+.btn:hover {
+  background-color: rgb(
+    135,
+    206,
+    250,
+    0.9
+  ); /* Увеличение прозрачности при наведении */
+}

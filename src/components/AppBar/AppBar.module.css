@@ -1,0 +1,58 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(135, 206, 250);
+  min-height: 60px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 4px;
+  font-weight: 500;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+  .home {
+    text-decoration: none;
+    color: black;
+  }
+
+  h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+  }
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    li {
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      .signed {
+        p {
+          font-size: 8px;
+        }
+      }
+      .signedspan {
+        font-weight: 500;
+      }
+    }
+  }
+
+  button {
+    background-color: transparent;
+    border: none;
+    transition: color 0.2s;
+  }
+
+  button:hover {
+    color: rgba(0, 0, 0, 0.6);
+  }
+}

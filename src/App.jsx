@@ -21,7 +21,6 @@ const RegistrationPage = lazy(() =>
 
 function App() {
   const isRefreshing = useSelector(selectIsRefreshing);
-  console.log(isRefreshing);
 
   const dispatch = useDispatch();
 
@@ -44,23 +43,24 @@ function App() {
                 </PrivateRoute>
               }
             />
+            <Route
+              path="login"
+              element={
+                <RestrictedRoute>
+                  <LoginPage />
+                </RestrictedRoute>
+              }
+            />
+            <Route
+              path="register"
+              element={
+                <RestrictedRoute>
+                  <RegistrationPage />
+                </RestrictedRoute>
+              }
+            />
           </Route>
-          <Route
-            path="login"
-            element={
-              <RestrictedRoute>
-                <LoginPage />
-              </RestrictedRoute>
-            }
-          />
-          <Route
-            path="register"
-            element={
-              <RestrictedRoute>
-                <RegistrationPage />
-              </RestrictedRoute>
-            }
-          />
+
           <Route path="*" element={<NotFound />} />
         </Routes>
       </div>

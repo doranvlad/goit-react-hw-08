@@ -1,5 +1,6 @@
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+body {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background: linear-gradient(to right, #a18cd1, rgb(251, 194, 235));
 }
