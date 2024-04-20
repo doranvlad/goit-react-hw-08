@@ -1,8 +1,9 @@
 .wrapper {
   border: 1px solid black;
-  width: 300px;
+  min-width: 300px;
   padding: 15px 10px;
   display: flex;
+  gap: 15px;
   justify-content: space-between;
   border-radius: 4px;
 
